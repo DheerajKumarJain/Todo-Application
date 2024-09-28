@@ -1,0 +1,336 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav li a:hover {
+  background-color: #777;
+}
+
+/* Content Container */
+.content-container {
+  margin-top: 20px;
+}
+
+.header {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styles */
+.todo-form,
+.edit-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input,
+.category-input,
+.search-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.search-input {
+  margin-bottom: 20px;
+}
+
+/* To-do List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out the content and actions */
+  border: 1px solid #ddd;
+}
+
+.todo-item-content {
+  display: flex;
+  align-items: center; /* Align task text and edit field */
+  flex: 1;
+  margin-right: 20px; /* Space out from action buttons */
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-item-actions {
+  display: flex;
+  gap: 10px; /* Space between action buttons */
+  align-items: center; /* Align action buttons vertically */
+}
+
+/* Edit button */
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Mark and Delete buttons */
+.todo-item-actions button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-item-actions button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+}
+
+.todo-item-actions button:hover {
+  background-color: #e0a800;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.mark-button {
+  background-color: #28a745;
+}
+
+.mark-button:hover {
+  background-color: #218838;
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px; /* Added margin to separate it from the task */
+}
+
+.edit-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.edit-form button {
+  padding: 5px 10px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-form button:hover {
+  background-color: #138496;
+}
+
+.edit-form .cancel-button {
+  background-color: #6c757d;
+}
+
+.edit-form .cancel-button:hover {
+  background-color: #5a6268;
+}
+/* App.css */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 50px; /* Adjust logo size */
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.content-container {
+  margin-top: 20px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input, .category-input, .search-input {
+  flex: 1;
+  padding: 10px;
+}
+
+.submit-button {
+  padding: 10px 15px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.todo-item-content {
+  flex-grow: 1;
+}
+
+.todo-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button, .mark-button, .delete-button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.edit-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-item-actions {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-left: auto; /* Aligns the buttons to the right */
+}
+
+.edit-button,
+.mark-button,
+.delete-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button:hover,
+.mark-button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
